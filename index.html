@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Estimator</title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0px auto;background:#9aafc7;padding-top:50px;}
+.wrap{width:50%;height:40%;background: #fde2a3;margin:0px auto;}
+
+input{margin:2px 2px;}
+</style>
+<script>
+function calc()
+{
+let a = document.getElementById("a").value;
+let b = document.getElementById("b").value;
+let c = document.getElementById("c").value;
+let d = a*b*c;
+alert("Average Student is:"+a+"\nAverage Courses is:"+b+"\nTerm is:"+c+"\nThe total estimater is (avg student * avg course * term):"+d);
+
+}
+
+</script>
+</head>
+<body>
+   <center> <h1 style="color:#fff;">Student Estimator</h1></center>
+<div class="wrap">
+<center><form action="#" method="post" onsubmit="calc()">
+<input type="number" placeholder="Enter Average Students" id="a" required/><br>
+<input type="number" placeholder="Enter Average Course" id="b" required/><br>
+<input type="number" placeholder="Enter Terms" id="c" required/><br>
+<input type="submit" value="submit"/>
+
+</form></center>
+</div>
+</body>
+</html>
+
